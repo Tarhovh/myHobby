@@ -4,20 +4,10 @@
 
 /* Header start */
 
-/* .header {
-    text-align: center;
-    color: white;
-    font-size: 30px;
-    
-    height: 25vh;
-    background-image: url("../images/Chess-pieces-formation-42497-pixahive.jpg");
-    background-image: height 200px;
-  } */
-
   .header-image {
     background-image: url("../images/Chess-pieces-formation-42497-pixahive.jpg");
     background-color: #cccccc;
-    height: 235px;
+    height: 180px;
     background-position: center;
     position: relative;
     opacity: 1;
@@ -74,18 +64,12 @@
     }
 
 .navigation2 {
-      /* position: sticky;
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: center;
-      list-style: none;
-      background: #fff; */
+      
     text-align: left;
     text-shadow: black;
     position: absolute;
     top: 50%;
     left: 25%;
-    /* transform: translate(-50%, -50%); */
     color: #7b6565;
     list-style: none;
     display: flex;
@@ -136,50 +120,49 @@ table, th, tr, td {
 
       /* Rating table end*/
 
+    /* Article style Start */
+
+  .articleContainer {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(192, 234, 241);
+  }
+
+  .article {
+    /* font-size: 16px; */
+    color: gray;
+    max-width: 40em;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: fff;
+  }
+
+  .article > h1, h2 {
+    margin: 15px 15px 10px 25px;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .article > p, p {
+    margin: 5px 15px 10px 15px;
+  }
+
+  .article > ul > ol {
+    margin: 10px;
     
+  }
 
+  .article > p:hover {
+    background-color: rgb(147, 199, 218);
+  }
 
+.article > img {
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  margin: 5px 5px 10px 5px;
+  height: 500px;
+}
 
 
 /* My Footer style */
@@ -189,7 +172,6 @@ table, th, tr, td {
   }
 
 .footer {
-  position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -197,7 +179,7 @@ table, th, tr, td {
   color: white;
   
   display: flex;
-  height: 15vh;
+  height: 12vh;
   flex-flow: row wrap;
   justify-content: space-around;
 }
@@ -207,7 +189,6 @@ table, th, tr, td {
 }
 
 .footer2 {
-    position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -219,7 +200,7 @@ table, th, tr, td {
     flex-flow: row wrap;
     justify-content: space-around;
 
-    margin: auto;
+    /* margin: auto; */
     outline: -webkit-focus-ring-color auto 1px;
 }
 
