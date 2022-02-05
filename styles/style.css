@@ -74,8 +74,6 @@
     list-style: none;
     display: flex;
     flex-direction: row;
-
-    
     }   
 
 /* Navigation end*/
@@ -84,29 +82,41 @@
 
 .tableRating {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  background-color: antiquewhite;
+}
+
+.widget {
+  align-self: flex-start;
+  margin-top: 50px;
 }
 
 table, th, tr, td {
-  border: 1px solid black;
+  align-self: center;
+  border: 1.5px solid black;
   border-collapse: collapse;
-  margin: 10px;
+  margin: 25px 0px 25px 0px;
+  text-align: center;
+  font-size: 18px;
+  background-color: #9b9696;
 }
 
     /* Rating table start*/
+
     .fed {
       display: flex;
-      width: 32px;
       flex-direction: row;
       align-items: center;
     }
 
       .fed > img {
+        width: 50px;
+        height: 50px;
         margin: 5px;
       }
 
         .fed > img:hover {
-          transform: rotateY(360deg);
+          transform:  scale(2);
           transition:  transform 1s;         
         }
 
@@ -115,8 +125,6 @@ table, th, tr, td {
         transition: .6s;
         color: #fff
         }
-
-      
 
       /* Rating table end*/
 
@@ -139,30 +147,29 @@ table, th, tr, td {
     background-color: fff;
   }
 
-  .article > h1, h2 {
-    margin: 15px 15px 10px 25px;
-    justify-content: center;
-    text-align: center;
+    .article > h1, h2 {
+      margin: 15px 15px 10px 25px;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .article > p, p {
+      margin: 5px 15px 10px 15px;
+    }
+
+      .article > p:hover {
+        background-color: rgb(147, 199, 218);
+      }
+
+    .article > ul > ol {
+      margin: 10px;
+    }
+
+  .article > img {
+    margin: 5px 5px 10px 5px;
+    height: 500px;
+    align-self: center;
   }
-
-  .article > p, p {
-    margin: 5px 15px 10px 15px;
-  }
-
-  .article > ul > ol {
-    margin: 10px;
-    
-  }
-
-  .article > p:hover {
-    background-color: rgb(147, 199, 218);
-  }
-
-.article > img {
-
-  margin: 5px 5px 10px 5px;
-  height: 500px;
-}
 
 
 /* My Footer style */
@@ -215,5 +222,7 @@ table, th, tr, td {
             height: 200px;
         
         }
+
+        
 
         }
